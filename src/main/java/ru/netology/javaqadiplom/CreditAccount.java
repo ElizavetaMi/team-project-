@@ -6,6 +6,7 @@ public class CreditAccount {
     private final int creditLimit;
     private final int rate;
 
+
     public CreditAccount(int initialBalance, int creditLimit, int rate) {
         if (initialBalance < 0) {
             throw new IllegalArgumentException("Начальный баланс не может быть отрицательным: " + initialBalance);

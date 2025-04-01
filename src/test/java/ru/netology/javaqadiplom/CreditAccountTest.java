@@ -57,7 +57,7 @@ public class CreditAccountTest {
         Assertions.assertFalse(result);
         Assertions.assertEquals(2_000, account.getBalance());
     }
-    
+
 
     @Test
     public void shouldCalculateYearChangeForPositiveBalance() {
