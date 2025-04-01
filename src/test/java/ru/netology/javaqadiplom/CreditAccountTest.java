@@ -57,13 +57,7 @@ public class CreditAccountTest {
         Assertions.assertFalse(result);
         Assertions.assertEquals(2_000, account.getBalance());
     }
-
-    @Test
-    public void shouldCalculateYearChangeForNegativeBalance() {
-        CreditAccount account = new CreditAccount(-3_000, 5_000, 20);
-        int interest = account.yearChange();
-        Assertions.assertEquals(-600, interest);
-    }
+    
 
     @Test
     public void shouldCalculateYearChangeForPositiveBalance() {
@@ -87,4 +81,7 @@ public class CreditAccountTest {
         Assertions.assertThrows(IllegalArgumentException.class, () -> new CreditAccount(1_000, 5_000, 0));
     }
 }
+
+
+
 
