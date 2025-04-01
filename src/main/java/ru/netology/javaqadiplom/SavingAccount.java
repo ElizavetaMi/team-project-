@@ -13,6 +13,7 @@ public class SavingAccount extends Account {
         }
         if (initialBalance < minBalance || initialBalance > maxBalance) {
             throw new IllegalArgumentException("Начальный баланс должен быть в пределах minBalance и maxBalance.");
+                   
         }
         if (rate < 0) {
             throw new IllegalArgumentException("Накопительная ставка не может быть отрицательной, а у вас: " + rate);
